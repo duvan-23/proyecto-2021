@@ -9,7 +9,7 @@ const userRoutes = require("./routes/user");
 const usuariosRoutes = require("./routes/usuarios");
 
 //iMPORTAR VARIABLES DE ENTORNO LOCALES
-require('dotenv').config({path:'variables.env'});
+require('dotenv').config();
 console.log(process.env.DB_URL);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
